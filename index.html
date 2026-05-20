@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculus in Food Security: Padi Growth Modeling</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 min-h-screen p-4 md:p-8">
+
+    <div class="max-w-5xl mx-auto bg-white rounded-2xl shadow-xl overflow-hidden border border-slate-100">
+        
+        <header class="bg-gradient-to-r from-emerald-600 to-teal-700 p-6 md:p-8 text-white">
+            <span class="bg-emerald-500/30 text-emerald-100 text-xs font-bold uppercase tracking-wider px-3 py-1 rounded-full">
+                SFM: Food Security & Bioscience Analytics
+            </span>
+            <h1 class="text-2xl md:text-4xl font-extrabold mt-2">
+                Modeling Malaysian Padi Growth Rates via Derivatives
+            </h1>
+            <p class="text-emerald-100 mt-2 text-sm md:text-base max-w-3xl">
+                An interactive application demonstrating how calculus ($f'(x)$) optimizes crop management timelines to safeguard national rice production.
+            </p>
+        </header>
+
+        <div class="p-6 md:p-8 space-y-8">
+            
+            <section class="grid md:grid-cols-3 gap-6">
+                <div class="md:col-span-2 space-y-4">
+                    <h2 class="text-xl font-bold text-slate-900 border-b pb-2 border-slate-200">
+                        The Food Security Problem
+                    </h2>
+                    <p class="text-sm leading-relaxed text-slate-600">
+                        In Malaysia, self-sufficiency levels (SSL) for rice are a primary food security metric. To maximize yields of local varieties like <strong>MR297</strong> or <strong>MR219</strong>, agronomists must understand exactly <em>when</em> the crop experiences its fastest metabolic growth phase. 
+                    </p>
+                    <p class="text-sm leading-relaxed text-slate-600">
+                        While the total biomass $f(x)$ tells us the current weight of the crop, the <strong>derivative $f'(x)$</strong> calculates the instantaneous growth rate (g/day). Identifying the peak of this derivative (the inflection point) tells farmers precisely when the crop demands peak nitrogen fertilizer inputs and optimal water management.
+                    </p>
+                </div>
+                
+                <div class="bg-slate-50 p-4 rounded-xl border border-slate-200 space-y-3">
+                    <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider">
+                        Realistic Data Baseline
+                    </h3>
+                    <p class="text-xs text-slate-600 leading-normal">
+                        Model parameterized based on biological growth constants typical of MARDI (Malaysian Agricultural Research and Development Institute) research frameworks for a 120-day lowland rice cycle.
+                    </p>
+                    <div class="text-[11px] text-emerald-700 space-y-1 bg-white p-2 rounded border border-slate-100">
+                        <div><strong>Data Reference Points:</strong></div>
+                        <div>• MARDI Paddy Database (MR Series)</div>
+                        <div>• Department of Agriculture Malaysia (DOA) Crop Yield Statistics</div>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="border-slate-200">
+
+            <section class="bg-emerald-50/50 p-4 rounded
